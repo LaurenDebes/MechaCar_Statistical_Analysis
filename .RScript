@@ -1,0 +1,2 @@
+mecha_df <- read.csv('MechaCar_mpg.csv', check.names = F, stringsAsFactors= F)
+
