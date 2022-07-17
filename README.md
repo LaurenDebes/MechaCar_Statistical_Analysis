@@ -15,3 +15,24 @@ We were able to determine that lot 3 contributed greatly to PSI variance and sta
 - <b> Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?</b> The variance of suspension coils is much greater at lot 3 at 170 pounds for square inch, while lot 1 (1 pound) and lot 2 (7.5 pounds) are way under. This impacts the overall variance for each of the lots. Only Lot 3 is a problem and does not meet the design specification. 
 
 ![total_summary.png](https://raw.githubusercontent.com/LaurenDebes/MechaCar_Statistical_Analysis/main/total_summary.png) ![lot_summary.png](https://raw.githubusercontent.com/LaurenDebes/MechaCar_Statistical_Analysis/main/lot_summary.png)
+
+## T-Tests on Suspension Coils
+We used a one-sample t-test to determine if all manufacturing lots and each individual lot are statistically different from the population mean of 1500 pounds per square inch. In each of our findings, the p-level is lower than the significance level, so we have evidence to reject the null hypothesis and state that our data is different than the population. 
+
+![ttests.png](https://raw.githubusercontent.com/LaurenDebes/MechaCar_Statistical_Analysis/main/ttests.png)
+
+## Study Design: MechaCar vs Competition
+We are looking to design a study to compare the manufacturing costs of MechaCar cars to the competition (other manufacturers in a similar price range). 
+- We will be looking at the following metrics per manufacturer and within the building plants:
+  - Total Cost
+  - Total Labor Cost
+  - Total Manufacturing Time
+  - Cost of Parts
+- Null Hypothesis: The costs are the same, any differences can be explained by random chance
+- Alternative Hypothesis: The costs are different, the differences are not explained by random chance
+- Statistical test to run:
+  - Because we will be using a large data set, using a numerical success metric, and comparing two data from two different data sets, we can use a two-sample t-test. This will answer if there is a statistical difference between the distribution means from the two samples. 
+- Data Needed to Run Test:
+  - Data on individual manufacturing plants for MechaCar vs competition manufacturers
+  - We will need data on total cost including labor (standardized to the same currency), labor cost by itself, manufacturing time from start to finish, and the total cost for parts. We will need to make sure the data is normal and follows the correct assumptions.
+ 
