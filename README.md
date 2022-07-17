@@ -9,3 +9,9 @@ We used linear regression to see how much of an effect other variables had on MP
 The r-squared value is 0.71, which means about 71% of the variablilty of our dependent variable is explained using this linear model. This is a fairly good model to predict MechaCar mpg. However, the intercept is significant which points a significant amount of variability in the dependent variable when all independent variables are zero. Scaling/transforming the length, weight, and ground clearance might make it even more accurate.
 
 ![Deliverable1Image.png](https://raw.githubusercontent.com/LaurenDebes/MechaCar_Statistical_Analysis/main/Deliverable1Image.png)
+
+## Summary Statistics on Suspension Coils
+We were able to determine that lot 3 contributed greatly to PSI variance and standard deviation. The manufacturing process is not consistent across the production lots. 
+- <b> Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?</b> The variance of suspension coils is much greater at lot 3 at 170 pounds for square inch, while lot 1 (1 pound) and lot 2 (7.5 pounds) are way under. This impacts the overall variance for each of the lots. Only Lot 3 is a problem and does not meet the design specification. 
+
+![total_summary.png](https://raw.githubusercontent.com/LaurenDebes/MechaCar_Statistical_Analysis/main/total_summary.png) ![lot_summary.png](https://raw.githubusercontent.com/LaurenDebes/MechaCar_Statistical_Analysis/main/lot_summary.png)
